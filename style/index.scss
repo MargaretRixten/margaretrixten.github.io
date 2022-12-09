@@ -1,0 +1,261 @@
+@import url('/fonts/fonts.css');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Gotham Pro Regular';
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.promoters-scale{
+  background: #70a74b;
+  width: 31%;
+}
+.promoters-line{
+  background: #b5d0a2;
+  width: 30%;
+}
+
+.skeptics-scale{
+  background: #fbd229;
+  width: 33%;
+}
+.skeptics-line{
+  background: #fae691;
+  width: 31%;
+}
+
+.critics-scale{
+  background: #ed5243;
+  width: 27%;
+}
+.critics-line{
+  background: #f3a69e;
+  width: 32%;
+}
+
+.canvas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 496px;
+  margin: 0 auto;
+  /* &:before {
+    position: absolute;
+    content: "";
+    width: 37px;
+    height: 345px;
+    border: 2px solid gray;
+    transform: translateY(47%);
+    left: 42px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 360px;
+    transform: translateY(45%);
+    left: 75px;
+    background: white;
+  } */
+  /* &:before{
+        position: absolute;
+        content: '';
+        width: 30px;
+        height: 2px;
+        background: black;
+        top: 49%;
+        left: 45px;
+        transform: translateY(-50%);
+    }
+    &:after{
+        position: absolute;
+        content: '';
+        width: 2px;
+        height: 335px;
+        background: black;
+        left: 45px;
+        transform: translateY(49%);
+    } */
+}
+
+.line {
+  position: absolute;
+  transform: translateY(47%);
+  left: 38px;
+  path {
+    stroke-width: 2px;
+  }
+}
+.chart {
+  position: relative;
+  transform: rotate(-90deg);
+}
+
+.unit {
+  fill: none;
+  stroke-width: 1.2px;
+  stroke-linecap: round;
+}
+
+.unit:nth-child(1) {
+  stroke: #ececec;
+  stroke-dasharray: 30 100;
+  stroke-dashoffset: -65;
+}
+
+.unit:nth-child(2) {
+  stroke: #70a84b;
+  stroke-dasharray: 30 100;
+  stroke-dashoffset: -37.5;
+}
+
+.unit:nth-child(3) {
+  stroke: #fcd329;
+  stroke-dasharray: 32.5 100;
+  stroke-dashoffset: -5;
+}
+
+.loyalty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  &__descr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #beb9b2;
+  }
+  &__result {
+    color: #fbd229;
+    font-size: 22px;
+  }
+  h2 {
+    color: #5b5b5bed;
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+}
+.points {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 12px;
+  font-size: 23px;
+  color: #70a74b;
+}
+
+.percentage {
+  position: relative;
+  color: #5b5b5bed;
+  &__number {
+    span {
+      &:nth-child(1) {
+        font-size: 70px;
+      }
+      &:nth-child(2) {
+        font-size: 36px;
+      }
+    }
+  }
+  &__symbol {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    font-size: 20px;
+    color: #a7a7a7;
+  }
+}
+.statistic-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.statistic-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.statistic-percent{
+  color: #5b5b5bed;
+  font-size: 18px;
+}
+
+.statistic-block{
+  margin-right: 9px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.statistic-graph {
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  width: 130px;
+  height: 45px;
+}
+
+.statistic-percentage {
+  color: #5b5b5bed;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+}
+
+.statistic-title {
+  width: 130px;
+  font-size: 19px;
+  color: #5b5b5bed;
+}
+
+.statistic-rect {
+  height: 38px;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  border-top-left-radius: 5px;
+}
+
+.statistic-line {
+  position: absolute;
+  bottom: 0;
+  height: 9px;
+  left: -4px;
+  border-bottom-left-radius: 5px;
+}
+
+.statistic-person{
+  margin-top: 5px;
+  span{
+    color: #cccccc;
+    font-size: 19px;
+  }
+  svg{
+    width: 20px;
+    height: 17px;
+    path{
+      fill: #cccccc
+    }
+  }
+}

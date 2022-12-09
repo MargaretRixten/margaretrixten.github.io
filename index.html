@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.min.css" />
+    <title>Circle-statistic</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="canvas">
+        <svg class="chart" width="500" height="500" viewBox="0 0 50 50">
+          <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+          <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+          <circle class="unit" r="15.9" cx="50%" cy="50%"></circle>
+        </svg>
+        <svg
+          class="line"
+          width="35"
+          height="349"
+          viewBox="0 0 35 349"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M35 1C22.6066 1 13.7705 1 10.9016 1C8.03279 1 7.45902 5.38316 7.45902 6.84421V270.564M7.45902 299.055V270.564M22.377 270.564H7.45902M7.45902 309.282V328.276M13.7705 318.779H0M7.45902 331.198V343.617C7.45902 345.078 8.14754 348 10.9016 348C13.6557 348 16.2568 348 17.2131 348"
+            stroke="#CBCBCB"
+          />
+        </svg>
+        <div class="loyalty">
+          <div class="percentage">
+            <div class="percentage__number"><span>72</span>.<span>7</span></div>
+            <span class="percentage__symbol">%</span>
+          </div>
+          <h2>Лояльность</h2>
+          <p class="loyalty__result">ниже среднего</p>
+          <div class="loyalty__descr">
+            <p>По отрасли: FMCG</p>
+            <p>значений слева от медианы</p>
+            <p>52.0% - 83.1%</p>
+          </div>
+          <div class="points">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 320 300"><path fill="#70a74b" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+            <span>3.1</span>
+          </div>
+        </div>
+      </div>
+      <div class="statistic-wrapper">
+        <div class="statistic-item">
+          <p class="statistic-title">Промоутеры</p>
+          <div class="statistic-block">
+            <p class="statistic-percent">32.0%</p>
+            <div class="statistic-person">
+              <span>81</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><defs><style>.cls-1{fill:#000000;}</style></defs><title>human_Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></g></g></svg>
+            </div>
+          </div>
+          <div class="statistic-graph">
+              <p class="statistic-percentage">+1.2%</p>
+              <div class="statistic-rect promoters-scale"></div>
+              <div class="statistic-line promoters-line"></div>
+          </div>
+
+        </div>
+        <div class="statistic-item">
+          <p class="statistic-title">Скептики</p>
+          <div class="statistic-block">
+            <p class="statistic-percent">39.1%</p>
+            <div class="statistic-person">
+              <span>8</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><defs><style>.cls-1{fill:#000000;}</style></defs><title>human_Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></g></g></svg>
+            </div>
+          </div>
+          <div class="statistic-graph">
+              <p class="statistic-percentage">+4.8%</p>
+              <div class="statistic-rect skeptics-scale"></div>
+              <div class="statistic-line skeptics-line"></div>
+          </div>
+
+        </div>
+        <div class="statistic-item">
+          <p class="statistic-title">Критики</p>
+          <div class="statistic-block">
+            <p class="statistic-percent">79.8%</p>
+            <div class="statistic-person">
+              <span>7</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.59 16.31"><defs><style>.cls-1{fill:#000000;}</style></defs><title>human_Ресурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Layer_3" data-name="Layer 3"><path class="cls-1" d="M15.11,12.71a1.82,1.82,0,0,0-1-1.29l-2.81-1.29h0l-1.16-.88h0a.8.8,0,0,0-.19-.38l0,0V7.44a7.55,7.55,0,0,0,.72-1.32,1.7,1.7,0,0,0,.77-1.32c0-.69-.21-.85-.42-.86C11,3.47,11.24,0,7.71,0,3.92,0,4.46,4,4.46,4h0c-.2,0-.42.17-.38.8a1.76,1.76,0,0,0,.76,1.32,9.32,9.32,0,0,0,.72,1.32V8.89a.78.78,0,0,0-.19.36l-1.16.87v.05L1.5,11.42a1.81,1.81,0,0,0-1,1.29L0,15.15s.46,1.16,7.8,1.16,7.79-1.16,7.79-1.16Z"/></g></g></svg>
+            </div>
+          </div>
+          <div class="statistic-graph">
+              <p class="statistic-percentage">-9.7%</p>
+              <div class="statistic-rect critics-scale"></div>
+              <div class="statistic-line critics-line"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
