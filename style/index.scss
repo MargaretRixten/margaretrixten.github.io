@@ -11,30 +11,45 @@
   max-width: 900px;
   margin: 0 auto;
 }
+.flag {
+  position: absolute;
+  top: 45px;
+  svg {
+    width: 70px;
+    height: 70px;
+    path{
+      fill: #cccccc;
+    }
+  }
+}
 
-.promoters-scale{
+.fm-arial {
+  font-family: 'Arial';
+}
+
+.promoters-scale {
   background: #70a74b;
   width: 31%;
 }
-.promoters-line{
+.promoters-line {
   background: #b5d0a2;
   width: 30%;
 }
 
-.skeptics-scale{
+.skeptics-scale {
   background: #fbd229;
   width: 33%;
 }
-.skeptics-line{
+.skeptics-line {
   background: #fae691;
   width: 31%;
 }
 
-.critics-scale{
+.critics-scale {
   background: #ed5243;
   width: 27%;
 }
-.critics-line{
+.critics-line {
   background: #f3a69e;
   width: 32%;
 }
@@ -167,6 +182,7 @@
     span {
       &:nth-child(1) {
         font-size: 70px;
+        font-weight: normal;
       }
       &:nth-child(2) {
         font-size: 36px;
@@ -194,12 +210,12 @@
   align-items: flex-start;
   gap: 10px;
 }
-.statistic-percent{
+.statistic-percent {
   color: #5b5b5bed;
   font-size: 18px;
 }
 
-.statistic-block{
+.statistic-block {
   margin-right: 9px;
   display: flex;
   align-items: flex-end;
@@ -245,17 +261,17 @@
   border-bottom-left-radius: 5px;
 }
 
-.statistic-person{
+.statistic-person {
   margin-top: 5px;
-  span{
+  span {
     color: #cccccc;
     font-size: 19px;
   }
-  svg{
+  svg {
     width: 20px;
     height: 17px;
-    path{
-      fill: #cccccc
+    path {
+      fill: #cccccc;
     }
   }
 }
